@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Digital | Home </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <style>
+        .abc {
+            background-image: url('tree.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .xyz {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .abc h1 {
+            font-size: 70px;
+        }
+        
+        .bic p {
+            font-size: 15px;
+        }
+        
+        .xyz p {
+            font-size: 10px;
+        }
+        
+        .vik h1 {
+            font-size: 30px;
+        }
+        
+        .icon {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body class="abc">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand bg-danger"> ONLINE INTERNSHIP </a>
+                        <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link active">HOME</a></li>
+                                <li class="nav-item"><a href="{% url 'Aboutus' %}" class="nav-link ">ABOUT</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">SERVICES</a></li>
+                                <li class="nav-item"><a href="{% url 'register' %}" class="nav-link">REGISTER</a></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'internships1.jpg' %}" alt="a" width="100%" height="300">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'slide2.jpg' %}" alt="b" width="100%" height="300">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'slide3.jpg' %}" alt="c" width="100%" height="300">
+                        </div>
+                    </div>
+                    <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+
+                    </button>
+                    <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-dark p-3 text-center abc">
+
+                <h1>Join Our Online Internship Program</h1>
+                <p class="bic">Gain valuable experience and skills with our industry-leading internship opportunities.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-4 ">
+                <div class="bic img-thumbnail" align="center">
+                    <div class="icon">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <h3 class="mt-2">Information</h3>
+                    <p class="xyz">This program provides valuable opportunities for students to gain practical experience and enhance their skills in various fields.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bic img-thumbnail" align="center">
+                    <div class="icon">
+                        <i class="bi bi-shield-fill-exclamation"></i>
+                    </div>
+                    <h3 class="mt-2">privacy</h3>
+                    <p class="xyz">This Privacy Policy explains how we collect, use, store, and protect the personal information of interns participating in our online internship program</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bic img-thumbnail" align="center">
+                    <div class="icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <h3 class="mt-2">contact us</h3>
+                    <p class="xyz">The contact section is essential for fostering communication between the online internship program and its participants. It helps create a supportive and responsive environment where individuals can get the information they need
+
+                    </p>
+
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
